@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "6d5efe6a-8b98-464b-8ff0-c50a94834faf",
+		"name": "Elasticsearch-Workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12845593"
+	},
+	"item": [
+		{
+			"name": "Envio Multiplo de Receitas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n    \"id\": 1,\r\n    \"nome\": \"Bolo de Cenoura\",\r\n    \"ingredientes\": [\r\n        \"cenoura\",\r\n        \"ovos\",\r\n        \"óleo\",\r\n        \"açúcar\",\r\n        \"farinha de trigo\",\r\n        \"fermento em pó\"\r\n    ],\r\n    \"modo_de_preparo\": \"Bata as cenouras, os ovos e o óleo no liquidificador. Em uma tigela, misture o açúcar, a farinha e o fermento. Acrescente a mistura do liquidificador e mexa bem. Asse em forno pré-aquecido a 180°C por cerca de 40 minutos.\",\r\n    \"tempo_preparo_minutos\": 60,\r\n    \"dificuldade\": \"fácil\",\r\n    \"categoria\": \"bolos\",\r\n    \"pais_origem\": \"Brasil\"\r\n},\r\n{\r\n    \"id\": 2,\r\n    \"nome\": \"Lasagna à Bolonhesa\",\r\n    \"ingredientes\": [\r\n        \"carne moída\",\r\n        \"massa para lasanha\",\r\n        \"queijo mussarela\",\r\n        \"presunto\",\r\n        \"molho de tomate\",\r\n        \"cebola\",\r\n        \"alho\",\r\n        \"sal\",\r\n        \"pimenta\",\r\n        \"azeite\"\r\n    ],\r\n    \"modo_de_preparo\": \"Refogue a cebola e o alho no azeite, acrescente a carne e o molho de tomate. Cozinhe a massa da lasanha conforme instruções do pacote. Em um refratário, intercale camadas de massa, carne, presunto e queijo. Asse em forno a 180°C por 30 minutos.\",\r\n    \"tempo_preparo_minutos\": 90,\r\n    \"dificuldade\": \"média\",\r\n    \"categoria\": \"massas\",\r\n    \"pais_origem\": \"Itália\"\r\n},\r\n{\r\n    \"id\": 3,\r\n    \"nome\": \"Sushi Tradicional\",\r\n    \"ingredientes\": [\r\n        \"arroz para sushi\",\r\n        \"vinagre de arroz\",\r\n        \"nori\",\r\n        \"peixe cru\",\r\n        \"molho de soja\",\r\n        \"wasabi\"\r\n    ],\r\n    \"modo_de_preparo\": \"Lave o arroz e cozinhe conforme instruções. Misture o vinagre ao arroz e deixe esfriar. Coloque uma camada de arroz sobre a alga, adicione o peixe e enrole. Sirva com molho de soja e wasabi.\",\r\n    \"tempo_preparo_minutos\": 45,\r\n    \"dificuldade\": \"difícil\",\r\n    \"categoria\": \"oriental\",\r\n    \"pais_origem\": \"Japão\"\r\n},\r\n{\r\n    \"id\": 4,\r\n    \"nome\": \"Guacamole\",\r\n    \"ingredientes\": [\r\n        \"abacate\",\r\n        \"cebola\",\r\n        \"tomate\",\r\n        \"suco de limão\",\r\n        \"coentro\",\r\n        \"sal\",\r\n        \"pimenta\"\r\n    ],\r\n    \"modo_de_preparo\": \"Amasse o abacate e misture com os demais ingredientes. Ajuste o sal e a pimenta a gosto. Sirva com nachos ou tortilhas.\",\r\n    \"tempo_preparo_minutos\": 10,\r\n    \"dificuldade\": \"fácil\",\r\n    \"categoria\": \"aperitivos\",\r\n    \"pais_origem\": \"México\"\r\n},\r\n{\r\n    \"id\": 5,\r\n    \"nome\": \"Paella\",\r\n    \"ingredientes\": [\r\n        \"arroz\",\r\n        \"frango\",\r\n        \"linguiça\",\r\n        \"camarão\",\r\n        \"mexilhão\",\r\n        \"ervilhas\",\r\n        \"pimentão\",\r\n        \"alho\",\r\n        \"cebola\",\r\n        \"tomate\",\r\n        \"caldo de peixe\",\r\n        \"açafrão\",\r\n        \"sal\",\r\n        \"azeite\"\r\n    ],\r\n    \"modo_de_preparo\": \"Refogue o frango e a linguiça no azeite. Adicione alho, cebola, tomate e pimentão. Acrescente o arroz, o caldo de peixe e o açafrão. Cozinhe até o arroz ficar macio e finalize com os frutos do mar e as ervilhas.\",\r\n    \"tempo_preparo_minutos\": 120,\r\n    \"dificuldade\": \"difícil\",\r\n    \"categoria\": \"pratos principais\",\r\n    \"pais_origem\": \"Espanha\"\r\n},\r\n{\r\n    \"id\": 6,\r\n    \"nome\": \"Tiramisu\",\r\n    \"ingredientes\": [\r\n        \"biscoito champagne\",\r\n        \"café\",\r\n        \"cream cheese\",\r\n        \"creme de leite\",\r\n        \"açúcar\",\r\n        \"cacau em pó\"\r\n    ],\r\n    \"modo_de_preparo\": \"Mergulhe os biscoitos no café. Em uma tigela, misture o cream cheese, o creme de leite e o açúcar. Em um refratário, faça camadas alternadas de biscoito e creme. Finalize com uma camada de cacau em pó. Leve à geladeira por algumas horas antes de servir.\",\r\n    \"tempo_preparo_minutos\": 40,\r\n    \"dificuldade\": \"média\",\r\n    \"categoria\": \"sobremesas\",\r\n    \"pais_origem\": \"Itália\"\r\n}\r\n\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/receitas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"receitas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizações de receitas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Bolo de Cenoura\",\r\n    \"ingredientes\": [\r\n        \"cenoura\",\r\n        \"ovos\",\r\n        \"óleo\",\r\n        \"açúcar\",\r\n        \"farinha de trigo\",\r\n        \"fermento em pó\"\r\n    ],\r\n    \"modo_de_preparo\": \"Bata as cenouras, os ovos e o óleo no liquidificador. Em uma tigela, misture o açúcar, a farinha e o fermento. Acrescente a mistura do liquidificador e mexa bem. Asse em forno pré-aquecido a 180°C por cerca de 40 minutos.\",\r\n    \"tempo_preparo_minutos\": 60,\r\n    \"dificuldade\": \"fácil\",\r\n    \"categoria\": \"bolos\",\r\n    \"pais_origem\": \"Brasil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/receitas/pM0SCpMB5UOtpRagVdkW",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"receitas",
+						"pM0SCpMB5UOtpRagVdkW"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Query de Localização",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": {\r\n    \"bool\": {\r\n      \"filter\": [\r\n        {\r\n          \"geo_distance\": {\r\n            \"distance\": \"10km\",\r\n            \"localizacao\": {\r\n              \"lat\": 48.8566,\r\n              \"lon\": 2.3522\r\n            }\r\n          }\r\n        }\r\n      ]\r\n    }\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/receitas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"receitas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca de Receitas por nomes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": {\r\n    \"match\": {\r\n      \"nome\": {\r\n        \"query\" : \"Sushi\"\r\n      }\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/receitas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"receitas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca de Receitas por modo de preparo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"query\": {\r\n    \"bool\": {\r\n      \"must\": {\r\n        \"bool\" : { \r\n          \"should\": [\r\n            // { \"match\": { \"modo_de_preparo\": \"Liquidificador\" }}\r\n            // { \"match\": { \"modo_de_preparo\": \"Bata\" }}\r\n          ]\r\n        //   \"must\": { \"match\": { \"pais_origem\": \"Brasil\" }}\r\n        }\r\n      },\r\n    //   \"must_not\": { \"match\": {\"ingredientes\": \"ovos\" }}\r\n      \"must_not\": { \"match\": {\"ingredientes\": \"arroz\" }}\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/receitas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"receitas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca de Receitas por fuzziness",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": {\r\n        \"multi_match\" : {\r\n            \"query\" : \"ovo\",\r\n            \"fields\": [\"modo_de_preparo\", \"ingredientes\"],\r\n            \"fuzziness\": \"AUTO\"\r\n        }\r\n    },\r\n    \"size\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/receitas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"receitas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
