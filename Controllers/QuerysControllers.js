@@ -11,9 +11,12 @@ module.exports = {
     },
 
     async index(req, res) {
-        let searchResult = client.search({ index: req.originalUrl.substring(1), body: req.body });
-
-        res.send(await searchResult)
+        try {
+            let searchResult = client.search({ index: req.originalUrl.substring(1), body: req.body });
+            res.send(await searchResult)
+        } catch (error) {
+            console.error('Erro ao verificar o documento:', error);
+        }
     },
 
     async exists(req, res) {
